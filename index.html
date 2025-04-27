@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONVERT MONEY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <img src="./assets/logo.gif" alt="logo-devclub-convert-money" class="img-logo">
+
+  <main class="conversor">
+    <label>
+      Convertor <b>de</b>
+      <select>
+        <option>R$ Real Brasileiro</option>
+      </select>
+    </label>
+
+    <label>
+      Convertor <b>para</b>
+      <select class="currencySelect">
+        <option value="dolar">US$ Dólar americano</option>
+        <option value="euro">€ Euro</option>
+        <option value="libra">£ Libra</option>
+        <option value="bitcoin">₿ Bitcoin</option>
+      </select>
+    </label>
+
+    <label>
+      Valor
+      <input class="inputCurrency" placeholder="R$1.000,00">
+    </label>
+
+    <button class="convertButton">Converter</button>
+
+    <section>
+      <div class="currency-box">
+        <img src="./assets/REAL.png" alt="logo-moeda-a-converter">
+        <p class="currency">Real</p>
+        <p class="currency-valeu-to-convert">R$00,00</p>
+      </div>
+
+      <img src="./assets/Vector.png" alt="seta-para-baixo" class="arrow-img">
+
+      <div class="currency-box">
+        <img class="currency-img" src="./assets/DOLAR.png" alt="logo-moeda-convertida">
+        <p class="currency" id="currency-name">Dólar americano</p>
+        <p class="currency-valeu">US$00,00</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Carregar o script no final para garantir que o HTML foi carregado -->
+  <script src="script.js"></script>
+</body>
+
+</html>

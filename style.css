@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background-color: #8b52ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .img-logo {
+    width: 250px;
+    height: 300px;
+    margin: 20px auto;
+  }
+  
+  .conversor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 330px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 4px;
+    width: 100%;
+  }
+  
+  select,
+  input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: #8b52ff;
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  button:active {
+    opacity: 0.6;
+  }
+  
+  section {
+    border: 1px solid #8b52ff;
+    border-radius: 28px;
+    margin-top: 20px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+  
+  .arrow-img {
+    width: 35px;
+  }
+  
+  .currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .currency {
+    color: #777777;
+    font-size: 14px;
+  }
+  
+  .currency-value,
+  .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  /* RESPONSIVO PARA TELAS MENORES */
+  @media (max-width: 420px) {
+    .conversor {
+      width: 100%;
+      padding: 20px 16px;
+    }
+  
+    .img-logo {
+      width: 200px;
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    section {
+      width: 100%;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  
+    select,
+    input {
+      font-size: 14px;
+    }
+  
+    .currency-value,
+    .currency-value-to-convert {
+      font-size: 18px;
+    }
+  
+    .arrow-img {
+      width: 25px;
+    }
+  }
+  
